@@ -55,14 +55,11 @@ createApp({
         },
         
         doneOrNot(indexListItem) {
-            isDone = this.shoppingList[indexListItem].done;
-            console.log(isDone);
-            if (!isDone) {
-                isDone = true;
+            if (!this.shoppingList[indexListItem].done) {
+                this.shoppingList[indexListItem].done = true;
             } else {
-                isDone = false;
+                this.shoppingList[indexListItem].done = false;
             }
-            console.warn(isDone);
         }
     },
 }).mount('#app');
