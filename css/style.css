@@ -8,7 +8,8 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: honeydew;
+    background-color: rgb(13, 28, 106);
+    color: white;
 }
 
 .container{
