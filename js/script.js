@@ -4,6 +4,10 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            newListItem : {
+                text : '',
+                done : false
+            },
             shoppingList : [
                 {
                     text : 'riso',
@@ -35,8 +39,19 @@ createApp({
             if (itemIndex > -1) {
                 this.shoppingList.splice(itemIndex, 1);
             }
-        }
+        },
 
+        addNewItem(content) {
+            this.shoppingList.push(content);
+            this.clearInput();
+        },
+
+        clearInput() {
+            this.newListItem = {
+                text : '',
+                done : false
+            }
+        },   
     },
 }).mount('#app');
 

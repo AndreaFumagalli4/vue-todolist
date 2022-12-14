@@ -22,6 +22,20 @@ h2{
     padding: 1rem;
 }
 
+div.input {
+    padding: 1rem;
+}
+
+div.input button {
+    margin-left: .5rem;
+    color: white;
+    background-color: magenta;
+    border: none;
+    border-radius: 1rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+
 ul{
     padding-left: 1rem;
     list-style-type: none;
