@@ -1,0 +1,27 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: honeydew;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1,
+h2{
+    padding: 1rem;
+}
+
+ul{
+    padding-left: 2rem;
+    list-style-type: none;
+}
