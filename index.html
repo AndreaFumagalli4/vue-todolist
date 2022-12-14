@@ -34,7 +34,8 @@
 
                 <ul>
                     <li v-for="(element, index) in shoppingList" >
-                        <p :class="(!shoppingList[index].done) ? '' : 'line-through' ">
+                        <p :class="(!shoppingList[index].done) ? '' : 'line-through' "
+                            @click="doneOrNot(index)">
                             {{ element.text }}
                         </p>
                         <i class="fa-solid fa-xmark" @click="removeItem(element)"></i>

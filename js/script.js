@@ -8,6 +8,7 @@ createApp({
                 text : '',
                 done : false
             },
+
             shoppingList : [
                 {
                     text : 'riso',
@@ -51,7 +52,18 @@ createApp({
                 text : '',
                 done : false
             }
-        },   
+        },
+        
+        doneOrNot(indexListItem) {
+            isDone = this.shoppingList[indexListItem].done;
+            console.log(isDone);
+            if (!isDone) {
+                isDone = true;
+            } else {
+                isDone = false;
+            }
+            console.warn(isDone);
+        }
     },
 }).mount('#app');
 

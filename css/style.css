@@ -17,6 +17,10 @@ body{
     margin: 0 auto;
 }
 
+.line-through {
+    text-decoration: line-through;
+}
+
 h1,
 h2{
     padding: 1rem;
@@ -49,10 +53,7 @@ ul li {
     justify-content: space-between;
 }
 
-.line-through {
-    text-decoration: line-through;
-}
-
+ul li p:hover,
 ul li i:hover {
     cursor: pointer;
     color: magenta;
