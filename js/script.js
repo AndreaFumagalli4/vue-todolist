@@ -29,5 +29,14 @@ createApp({
         }
     },
 
+    methods: {
+        removeItem(listItem) {
+            itemIndex = this.shoppingList.indexOf(listItem);
+            if (itemIndex > -1) {
+                this.shoppingList.splice(itemIndex, 1);
+            }
+        }
+
+    },
 }).mount('#app');
 

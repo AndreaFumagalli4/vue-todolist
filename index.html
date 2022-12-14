@@ -32,7 +32,7 @@
                         <p :class="(!shoppingList[index].done) ? '' : 'line-through' ">
                             {{ element.text }}
                         </p>
-                        <i class="fa-solid fa-xmark"></i>
+                        <i class="fa-solid fa-xmark" @click="removeItem(element)"></i>
                     </li>
                 </ul>
             </main>

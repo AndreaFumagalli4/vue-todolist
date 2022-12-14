@@ -38,3 +38,8 @@ ul li {
 .line-through {
     text-decoration: line-through;
 }
+
+ul li i:hover {
+    cursor: pointer;
+    color: magenta;
+}
