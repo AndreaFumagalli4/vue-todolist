@@ -28,9 +28,11 @@
                 </h2>
 
                 <ul>
-                    <li v-for="(element, index) in shoppingList" 
-                    :class="(!shoppingList[index].done) ? '' : 'line-through' ">
-                        {{ element.text }}
+                    <li v-for="(element, index) in shoppingList" >
+                        <p :class="(!shoppingList[index].done) ? '' : 'line-through' ">
+                            {{ element.text }}
+                        </p>
+                        <i class="fa-solid fa-xmark"></i>
                     </li>
                 </ul>
             </main>
