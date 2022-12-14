@@ -24,11 +24,12 @@
 
             <main class="container">
                 <h2>
-                    Lista della spesa
+                    Lista della spesa:
                 </h2>
 
                 <ul>
-                    <li v-for="element in shoppingList">
+                    <li v-for="(element, index) in shoppingList" 
+                    :class="(!shoppingList[index].done) ? '' : 'line-through' ">
                         {{ element.text }}
                     </li>
                 </ul>

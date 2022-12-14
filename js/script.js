@@ -15,7 +15,7 @@ createApp({
                 },
                 {
                     text : 'pane',
-                    done : false
+                    done : true
                 },
                 {
                     text : 'cereali',
@@ -23,11 +23,11 @@ createApp({
                 },
                 {
                     text : 'carne',
-                    done : false
+                    done : true
                 },
             ],
         }
     },
 
-    
 }).mount('#app');
+
